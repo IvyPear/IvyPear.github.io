@@ -1,5 +1,32 @@
-@import "tailwindcss";
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-[#426DA6] dark:hover:text-[#7AA3E6] transition-colors duration-300 font-medium;
+  }
+  
+  .skill-tag {
+    @apply px-4 py-2 bg-blue-50 dark:bg-blue-900/30 text-[#426DA6] dark:text-[#7AA3E6] rounded-full text-sm font-medium;
+  }
+  
+  .social-icon {
+    @apply w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-[#426DA6] hover:text-white dark:hover:bg-[#426DA6] transition-all duration-300 text-xl;
+  }
+  
+  .bg-gradient-blue {
+    background: linear-gradient(135deg, #426DA6 0%, #5D8BD6 100%);
+  }
+  
+  .text-gradient-blue {
+    background: linear-gradient(135deg, #426DA6 0%, #5D8BD6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }

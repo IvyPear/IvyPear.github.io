@@ -1,43 +1,20 @@
-import ScrollReveal from 'scrollreveal'
+import ScrollReveal from 'scrollreveal';
 
-export default function initScrollReveal(defaultProps = null) {
-    const targetElements = [
-        {
-            element: ".banner-text",
-            animation: {
-                delay: 700,
-                origin: window.innerWidth > 768 ? "left" : "bottom",
-            },
-        },
-        {
-            element: ".banner-cta",
-            animation: {
-                delay: 1000,
-                origin: window.innerWidth > 768 ? "left" : "bottom",
-            },
-        },
-        {
-            element: ".section-title",
-            animation: {
-                delay: 300,
-                distance: "0px",
-                origin: "bottom",
-            },
-        },
-        {
-            element: ".section-content",
-            animation: {
-                delay: 500,
-                distance: "0px",
-                origin: "bottom",
-            },
-        },
-    ];
-    
-    ScrollReveal({ reset: false });
-    
-    targetElements.forEach(({ element, animation }) => {
-        ScrollReveal().reveal(element, Object.assign({}, defaultProps, animation));
+export default function initScrollReveal() {
+  if (typeof ScrollReveal !== 'undefined') {
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease',
+      reset: false,
     });
-}
 
+    // Reveal elements
+    sr.reveal('#home .relative', { delay: 300 });
+    sr.reveal('#about .grid > div', { delay: 400 });
+    sr.reveal('#skills .grid > div', { interval: 200 });
+    sr.reveal('#contact .max-w-2xl', { delay: 300 });
+  }
+}

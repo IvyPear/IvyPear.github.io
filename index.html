@@ -1,165 +1,415 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
-<meta name="title" content="Nguyễn Ánh Ngọc | Frontend Web Developer Portfolio">
-<meta name="description" content="Hi, my name is Nguyen Anh Ngoc. I am a frontend web developer passionate about building responsive and user-friendly websites.">
-<meta name="keywords" content="frontend developer, web developer, portfolio, tailwind css, vite, html, css, javascript">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<meta name="author" content="Nguyễn Ánh Ngọc">
-  <meta property="og:title" content="Ngoc's Site" />
-  <meta property="og:url" content="/" />
-  <meta property="og:image" content="/banner.avif" />
-
-  <meta name="twitter:title" content="Ngoc's Site">
-  <meta name="twitter:description" content="Hi, my name is Nguyen Anh Ngoc. I'm the Web Developer.">
-  <meta name="twitter:image" content="/banner.avif">
-  <meta name="twitter:card" content="Ngoc's Site">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Ánh Ngọc | Developer Portfolio</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        h1, h2, h3, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .skill-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .bg-custom-blue {
+            background-color: #426DA6;
+        }
+        
+        .text-custom-blue {
+            color: #426DA6;
+        }
+        
+        .border-custom-blue {
+            border-color: #426DA6;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
-    </div>
-    <div class="w3-display-middle">
-    <section
-      class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
-      <div class="w-full lg:w-[80%] p-12 text-gray-800">
-        <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
-          <span>Hi, my name is <span class="text-teal-400">Nguyễn Ánh Ngọc</span></span>
-          <span class="text-gray-800">I'm the .</span>
-        </h1>
-
-        <a href="#about-me" class="uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-colors cursor-pointer">
-          <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-light focus:outline-none focus:ring focus:ring-teal-300">Know more</span>
-        </a>
-      </div>
-    </section>
-    <section id="about-me" class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
-  <div class="w-full lg:w-[60%] mb-5">
-    <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold text-white mb-12">About Me</h2>
-    <div class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3">
-      <div class="flex justify-center items-center text-center col-span-1">
-        <img class="object-cover max-w-xs lg:w-auto" src="https://nguyenanhngoc.com/imgs/avatar.png" title="My avatar"
-        alt="My avatar" />
-      </div>
-      <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
-        <div class="p-0 text-center lg:p-8 lg:text-start">
-          <p class="pb-3 text-lg font-light mb-5">
-            I love programming, application development, and research software architecture. My career
-            objective is to become a Senior Software Engineer who masters software architecture, design
-            principles, and modern development technologies.
-          </p>
-          <a href="https://drive.google.com/file/d/1rrqhPdD-moRjUvEqm7f_e6NvI_2hLhV_"
-            target="_blank"
-            class="uppercase border-2 border-white p-3 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
-            <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-normal focus:outline-none focus:ring focus:ring-teal-300">View My CV</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- about me -->
-    <section id="about-me" class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
-      <div class="w-full lg:w-[60%] mb-5">
-        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold text-white mb-12">About Me</h2>
-        <div class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3">
-          <div class="flex justify-center items-center text-center col-span-1">
-            <img class="object-cover max-w-xs lg:w-auto" src="https://nguyenhuuquyen.com/imgs/avatar.png" title="My avatar"
-            alt="My avatar" />
-          </div>
-          <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
-            <div class="p-0 text-center lg:p-8 lg:text-start">
-              <p class="pb-3 text-lg font-light mb-5">
-                I love programming, application development, and research software architecture. My career
-                objective is to become a Senior Software Engineer who masters software architecture, design
-                principles, and modern development technologies.
-              </p>
-              <a href="https://drive.google.com/file/d/1rrqhPdD-moRjUvEqm7f_e6NvI_2hLhV_"
-                target="_blank"
-                class="uppercase border-2 border-white p-3 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
-                <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-normal focus:outline-none focus:ring focus:ring-teal-300">View My CV</span>
-              </a>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-custom-blue flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">N</span>
+                    </div>
+                    <div class="text-xl font-bold font-heading">
+                        <span class="text-gray-800">Nguyễn Ánh</span>
+                        <span class="text-custom-blue">Ngọc</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-custom-blue transition-colors font-medium">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-custom-blue transition-colors font-medium">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-custom-blue transition-colors font-medium">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-custom-blue transition-colors font-medium">Contact</a>
+                </div>
+                
+                <button class="md:hidden text-gray-700" id="menuToggle">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- about me ./ -->
-    <!-- contact -->
-    <section id="contact" class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
-      <div class="w-full lg:w-[60%] mb-5">
-        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold mb-6">Contact</h2>
-        <p class="flex flex-col justify-center items-center pt-5 pb-5 text-center">
-          <span class="text-2xl text-teal-500 mb-3">I LOOK FORWARD TO WORKING WITH YOU</span>
-          <span>I'm so happy that my skills might bring values to you. Let's connect for work</span>
-        </p>
-      </div>
-      <a href="mailto: nghuuquyen@gmail.com?subject=Hi, Quyen I want to connect with you for work !!!&body=Please describe your work or projects requirements"
-        class="border-2 border-teal-400 pl-8 pr-8 pt-3 pb-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
-        <span class="text-xl uppercase font-light focus:outline-none focus:ring focus:ring-teal-300">Send An Email Now</span>
-      </a>
-    </section>
-    <!-- contact ./ -->
-    </div>
-  </div>
-    <!-- footer -->
-  <footer class="bg-neutral-900 min-h-[300px] pt-12 pb-12 flex flex-row justify-center items-center">
-    <div class="w-[60%] flex flex-col justify-center items-center">
-      <ul class="flex flex-row">
-        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
-          <a href="https://twitter.com/IvyPear" target="_blank">
-            <img class="w-10 grayscale hover:grayscale-0" src="/imgs/twitter.svg" />
-          </a>
-        </li>
-        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
-          <a href="https://www.linkedin.com/in/ngocvnuk/" target="_blank">
-            <img class="w-10 grayscale hover:grayscale-0" src="/imgs/linkedin.svg" />
-          </a>
-        </li>
-        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
-          <a href="https://github.com/IvyPear" target="_blank">
-            <img class="w-10 grayscale hover:grayscale-0" src="/imgs/github.svg" />
-          </a>
-        </li>
-      </ul>
+    </nav>
 
-      <hr class="w-1/2 border-gray-500 mt-10"/>
-      <p class="text-lg text-gray-500 mt-5">©2025 - Nguyễn Ánh Ngọc</p>
-    </div>
-  </footer>
-  <!-- footer ./ -->
-     <script type="module" src="/src/scripts/application.js"></script>
-         <div class="flex flex-row justify-center items-center p-12">
-      <h1 class="text-5xl text-green-300 animate-bounce">Hello, Tailwind CSS</h1>
-    </div>
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">
+                    Hi, I'm <span class="text-custom-blue">Nguyễn Ánh Ngọc</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    IT Student & Frontend Developer
+                </p>
+                <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+                    I'm passionate about creating beautiful, user-friendly, and efficient websites. 
+                    Currently a 3rd-year student at VNUK University.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#about" class="px-8 py-3 bg-custom-blue text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                        <i class="fas fa-user mr-2"></i>Learn More About Me
+                    </a>
+                    <a href="#contact" class="px-8 py-3 border-2 border-custom-blue text-custom-blue rounded-lg hover:bg-blue-50 transition-colors font-medium">
+                        <i class="fas fa-envelope mr-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-heading">About Me</h2>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+                <!-- Avatar -->
+                <div class="lg:w-2/5 flex justify-center">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Nguyễn Ánh Ngọc"
+                             class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-8 border-gray-100 shadow-lg">
+                        <div class="absolute -bottom-3 -right-3 w-16 h-16 bg-custom-blue rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-laptop-code text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="lg:w-3/5">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">IT Student & Developer</h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="text-gray-600">
+                            I'm Nguyễn Ánh Ngọc, a 3rd-year Information Technology student at VNUK University. 
+                            My passion for web development started when I created my first website.
+                        </p>
+                        
+                        <p class="text-gray-600">
+                            I believe that a good web product should not only look beautiful but also be easy to use, 
+                            performance-optimized, and user-friendly.
+                        </p>
+                        
+                        <p class="text-gray-600">
+                            When I'm not studying or coding, I enjoy reading tech books, learning new skills, 
+                            and participating in developer communities.
+                        </p>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-custom-blue">
+                        <h4 class="font-bold text-lg mb-2">Education</h4>
+                        <p class="text-gray-600">
+                            <i class="fas fa-graduation-cap text-custom-blue mr-2"></i>
+                            VNUK University - Information Technology (2022 - 2026)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">My Skills</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                Technologies and tools I use in my learning and project development
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- HTML/CSS -->
+                <div class="skill-card bg-white p-8 rounded-xl shadow-md text-center border-t-4 border-custom-blue">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-html5 text-3xl text-custom-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">HTML/CSS</h3>
+                    <p class="text-gray-600">Creating responsive and modern web interfaces</p>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="skill-card bg-white p-8 rounded-xl shadow-md text-center border-t-4 border-custom-blue">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-js text-3xl text-custom-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">JavaScript</h3>
+                    <p class="text-gray-600">Client-side interactions and logic</p>
+                </div>
+                
+                <!-- React -->
+                <div class="skill-card bg-white p-8 rounded-xl shadow-md text-center border-t-4 border-custom-blue">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-react text-3xl text-custom-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">ReactJS</h3>
+                    <p class="text-gray-600">Building web applications with components</p>
+                </div>
+                
+                <!-- Tools -->
+                <div class="skill-card bg-white p-8 rounded-xl shadow-md text-center border-t-4 border-custom-blue">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-3xl text-custom-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-heading">Tools</h3>
+                    <p class="text-gray-600">Git, VS Code, Figma, Tailwind CSS</p>
+                </div>
+            </div>
+            
+            <!-- Other Skills -->
+            <div class="mt-12">
+                <h3 class="text-xl font-bold text-center mb-6">Other Skills</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-blue-100 text-custom-blue rounded-full font-medium">Git & GitHub</span>
+                    <span class="px-4 py-2 bg-blue-100 text-custom-blue rounded-full font-medium">Responsive Design</span>
+                    <span class="px-4 py-2 bg-blue-100 text-custom-blue rounded-full font-medium">UI/UX Basics</span>
+                    <span class="px-4 py-2 bg-blue-100 text-custom-blue rounded-full font-medium">Problem Solving</span>
+                    <span class="px-4 py-2 bg-blue-100 text-custom-blue rounded-full font-medium">Teamwork</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 font-heading">Contact Me</h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                    Have questions, want to collaborate, or just connect? Feel free to reach out!
+                </p>
+                
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Contact Info -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 rounded-full bg-custom-blue flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Email</h4>
+                                        <a href="mailto:ngoc.nguyen230916@vnuk.edu.vn" class="text-gray-600 hover:text-custom-blue">
+                                            ngoc.nguyen230916@vnuk.edu.vn
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 rounded-full bg-custom-blue flex items-center justify-center mr-4">
+                                        <i class="fab fa-github text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">GitHub</h4>
+                                        <a href="https://github.com/IvyPear" target="_blank" class="text-gray-600 hover:text-custom-blue">
+                                            github.com/IvyPear
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 rounded-full bg-custom-blue flex items-center justify-center mr-4">
+                                        <i class="fas fa-university text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">University</h4>
+                                        <p class="text-gray-600">VNUK University, Da Nang</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Contact -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-6">Send a Quick Message</h3>
+                            
+                            <form class="space-y-4" id="contactForm">
+                                <div>
+                                    <input type="text" placeholder="Your Name" 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-custom-blue focus:ring-1 focus:ring-custom-blue outline-none">
+                                </div>
+                                
+                                <div>
+                                    <input type="email" placeholder="Your Email" 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-custom-blue focus:ring-1 focus:ring-custom-blue outline-none">
+                                </div>
+                                
+                                <div>
+                                    <textarea placeholder="Your Message..." rows="4"
+                                              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-custom-blue focus:ring-1 focus:ring-custom-blue outline-none"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full py-3 bg-custom-blue text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                                    <i class="fas fa-paper-plane mr-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="mt-12 text-center">
+                    <p class="text-lg font-medium mb-6">Connect with me on</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://github.com/IvyPear" target="_blank" 
+                           class="w-12 h-12 rounded-full bg-gray-200 hover:bg-custom-blue hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="mailto:ngoc.nguyen230916@vnuk.edu.vn"
+                           class="w-12 h-12 rounded-full bg-gray-200 hover:bg-custom-blue hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ngocvnuk/" target="_blank"
+                           class="w-12 h-12 rounded-full bg-gray-200 hover:bg-custom-blue hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-10 h-10 rounded-full bg-custom-blue flex items-center justify-center mr-3">
+                        <span class="font-bold">N</span>
+                    </div>
+                    <div class="text-xl font-bold font-heading">
+                        Nguyễn Ánh Ngọc
+                    </div>
+                </div>
+                
+                <p class="text-gray-400 mb-6">
+                    IT Student & Frontend Developer
+                </p>
+                
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">
+                        &copy; 2025 Nguyễn Ánh Ngọc. Student Portfolio.
+                    </p>
+                    <p class="text-gray-500 text-sm mt-2">
+                        VNUK University | Information Technology Faculty
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('right-6');
+            navLinks.classList.toggle('bg-white');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('rounded-lg');
+            navLinks.classList.toggle('shadow-lg');
+            navLinks.classList.toggle('space-y-4');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const navbarHeight = document.querySelector('nav').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navLinks = document.querySelector('.hidden.md\\:flex');
+                    if (!navLinks.classList.contains('hidden') && window.innerWidth < 768) {
+                        navLinks.classList.add('hidden');
+                        navLinks.classList.remove('flex');
+                    }
+                }
+            });
+        });
+
+        // Simple form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Add current year to footer if needed
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElements = document.querySelectorAll('[data-year]');
+            yearElements.forEach(el => {
+                el.textContent = new Date().getFullYear();
+            });
+        });
+    </script>
 </body>
 </html>
